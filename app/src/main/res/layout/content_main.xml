@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    android:id="@+id/main">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="      Your score:0                 Your turn score:0 \n Computer's score:0   Computer's turn score:0 "
+        android:id="@+id/textView"
+        android:layout_gravity="center"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/compRoll"
+        android:layout_gravity="center"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/dice1"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_height="100dp"
+        android:layout_width="wrap_content">
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_Roll"
+           android:text="@string/action_Roll"
+           android:onClick="onClickRoll"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_Hold"
+            android:text="@string/action_Hold"
+            android:onClick="onClickHold" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_Reset"
+            android:text="@string/action_Reset"
+            android:onClick="onClickReset"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/winner"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

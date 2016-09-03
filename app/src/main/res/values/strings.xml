@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dice Game</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_Roll">Roll</string>
+    <string name="action_Hold">Hold</string>
+    <string name="action_Reset">Reset</string>
+</resources>
